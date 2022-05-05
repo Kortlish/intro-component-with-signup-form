@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Intro component with sign up form</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<div class="body-shadow">
+			<div class="container d-flex">
+				<header class="header">
+					<h1 class="header__title">Learn to code by watching others</h1>
+					<p class="header__subtitle">
+						See how experienced developers solve problems in real-time. Watching
+						scripted tutorials is great, but understanding how developers think
+						is invaluable.
+					</p>
+				</header>
+				<aside class="aside">
+					<button class="aside__btn btn">
+						<p class="aside__btn-text">
+							<b>Try it free 7 days</b> then $20/mo. thereafter
+						</p>
+					</button>
+					<div class="card">
+						<form class="card__form" onsubmit="return false;">
+							<div class="card__inputbox">
+								<input
+									class="card__input"
+									type="text"
+									id="name"
+									placeholder="First Name"
+								/>
+								<img src="./images/icon-error.svg" alt="" class="error-icon" />
+							</div>
+							<p class="error-message" data-firstname></p>
+							<div class="card__inputbox">
+								<input
+									class="card__input"
+									type="text"
+									id="lastname"
+									placeholder="Last Name"
+								/>
+								<img src="./images/icon-error.svg" alt="" class="error-icon" />
+							</div>
+							<p class="error-message" data-lastname></p>
+							<div class="card__inputbox">
+								<input
+									class="card__input"
+									type="email"
+									id="email"
+									placeholder="Email Address"
+								/>
+								<img src="./images/icon-error.svg" alt="" class="error-icon" />
+							</div>
+							<p class="error-message" data-email></p>
+							<div class="card__inputbox">
+								<input
+									class="card__input"
+									type="password"
+									id="password"
+									placeholder="Password"
+								/>
+								<img src="./images/icon-error.svg" alt="" class="error-icon" />
+							</div>
+							<p class="error-message" data-password></p>
+							<button class="card__form-btn btn" type="submit" id="submit">
+								Claim your free trial
+							</button>
+						</form>
+						<p class="card__info-text">
+							By clicking the button, you are agreeing to our
+							<a href="#" class="card__info-text-mark">Terms and Services</a>
+						</p>
+					</div>
+				</aside>
+			</div>
+		</div>
+		<script src="./js/script.js"></script>
+	</body>
+</html>
